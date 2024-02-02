@@ -60,9 +60,9 @@ extern "C"
 #define free_lib(lib) dlclose(lib)
 #define get_proc(lib, name) dlsym(lib, name)
 #endif
+#include <string>
 #include <memory>
 #include <functional>
-#include <string>
 
 struct inface_string;
 typedef struct inface_string *inface_string_ptr;
